@@ -1,8 +1,8 @@
-// index.js
 import express from "express";
 
 const app = express();
-const PORT = 8000;
+// Use Render's dynamic port or default to 8000 for local dev
+const PORT = process.env.PORT || 8000;
 
 // Middleware to parse JSON bodies
 app.use(express.json());
